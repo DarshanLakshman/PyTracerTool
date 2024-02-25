@@ -13,7 +13,7 @@ setup(
     long_description=long_description,
     url='https://github.com/DarshanLakshman/PyTracerTool.git',
     packages=find_packages(),
-    install_requires=['sys', 'copy', 'tabulate', 'types', 'typing'],
+    install_requires=['tabulate', 'typing'],
     keywords=["trace", "debugging", "tracing", "execution", "visualisation"],
     classifiers=[
         'Development Status :: 4 - Beta',
