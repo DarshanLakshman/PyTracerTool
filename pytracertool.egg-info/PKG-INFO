@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pytracertool
-Version: 1.0.0
+Version: 1.0.1
 Summary: A versatile tool for tracing code execution, capturing variable changes, and logging print statements.
 Home-page: https://github.com/DarshanLakshman/PyTracerTool.git
 Author: Darshan Lakshman
