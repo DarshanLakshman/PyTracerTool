@@ -8,7 +8,7 @@ Author-email: darshan.lakshman@icloud.com
 Keywords: trace,debugging,tracing,execution,visualisation
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: Apache 2.0 License
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
 License-File: LICENSE
