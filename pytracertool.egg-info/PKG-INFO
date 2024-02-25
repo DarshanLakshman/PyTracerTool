@@ -12,10 +12,7 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
 License-File: LICENSE
-Requires-Dist: sys
-Requires-Dist: copy
 Requires-Dist: tabulate
-Requires-Dist: types
 Requires-Dist: typing
 
 # PyTracerTool Module
