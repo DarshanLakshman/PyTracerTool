@@ -21,6 +21,7 @@ pip install pytracertool
 
 Please have a look at a website I developed, which takes Python code as an input and allows you to step through the program - https://tracetableproject.pythonanywhere.com/ 
 
+<<<<<<< HEAD
 ## Python Documentation
 
 Help on built-in module sys:
@@ -349,6 +350,8 @@ FILE
 
 
 
+=======
+>>>>>>> 85da39925a91bfe393b794bfa7d4152c2b724d17
 ## License
 
 MIT License
