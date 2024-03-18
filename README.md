@@ -17,6 +17,8 @@ You can install PyTracerTool via pip:
 pip install pytracertool
 ```
 
+To import this module, you must do ```import PyTracerTool``` 
+
 ## Website
 
 Please have a look at a website I developed, which takes Python code as an input and allows you to step through the program - https://tracetableproject.pythonanywhere.com/ 
