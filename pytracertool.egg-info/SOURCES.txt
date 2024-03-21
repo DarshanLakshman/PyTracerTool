@@ -4,7 +4,7 @@ README.rst
 setup.py
 PyTracerTool/__init__.py
 pytracertool/__init__.py
-pytracertool/pytracertool_mod.py
+pytracertool/pytracertool.py
 pytracertool.egg-info/PKG-INFO
 pytracertool.egg-info/SOURCES.txt
 pytracertool.egg-info/dependency_links.txt

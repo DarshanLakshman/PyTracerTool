@@ -6,7 +6,7 @@ with open("README.rst", "r") as f:
 setup(
 
     name='pytracertool',
-    version='2.0.1',
+    version='2.0.2',
     author='Darshan Lakshman',
     author_email='darshan.lakshman@icloud.com',
     description='A versatile tool for tracing code execution, capturing variable changes, and logging print statements.',
