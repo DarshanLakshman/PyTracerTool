@@ -1,8 +1,10 @@
 LICENSE
 README.md
+README.rst
 setup.py
 PyTracerTool/__init__.py
-PyTracerTool/pytracertool.py
+pytracertool/__init__.py
+pytracertool/pytracertool_mod.py
 pytracertool.egg-info/PKG-INFO
 pytracertool.egg-info/SOURCES.txt
 pytracertool.egg-info/dependency_links.txt

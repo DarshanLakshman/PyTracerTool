@@ -30,6 +30,7 @@ import copy
 import tabulate
 import types
 import typing
+import io
 
 TRACER_RETURN_TYPE = typing.Optional[
     typing.Callable[
@@ -124,7 +125,7 @@ class CodeTracer(object):
         context: A dictionary to store the execution context.
     """
 
-    def __init__(self, python_code: str):
+    def __init__(self, python_code: str, user_input: str):
         """
         Initialize a new instance of CodeTracer.
 
@@ -144,6 +145,7 @@ class CodeTracer(object):
         self.calls_log = []
         self.output_lines = []
         self.context = {}
+        self.user_input = user_input
 
     def __str__(self) -> str:
         """
@@ -363,6 +365,10 @@ class CodeTracer(object):
 
         self.execution_order = []
         sys.settrace(self.lines_tracer)
+
+        input_stream = io.StringIO(self.user_input)
+
+        sys.stdin = input_stream
         exec(self.code)
         sys.settrace(None)
 
@@ -402,6 +408,10 @@ class CodeTracer(object):
         original_stdout = sys.stdout
 
         sys.stdout = output_logger
+
+        input_stream = io.StringIO(self.user_input)
+
+        sys.stdin = input_stream
 
         exec(self.code)
 
@@ -460,18 +470,23 @@ class CodeTracer(object):
         """
 
 
-        self.trace_lines()
-
-        self.output_lines = self.capture_print_statements()
-
         formatted_code = self.format_code_for_tracing()
 
         formatted_code += "\n" + "main()"
         print(formatted_code)
 
+
         sys.settrace(self.variables_tracer)
+
+        input_stream = io.StringIO(self.user_input)
+
+        sys.stdin = input_stream
         exec(formatted_code)
         sys.settrace(None)
+
+        self.trace_lines()
+
+        self.output_lines = self.capture_print_statements()
 
         variables = set()
         for entry in self.tracer_info:
